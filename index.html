@@ -1,0 +1,170 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GARAGEAQIL.ID</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #363635;
+            color: #000000;
+        }
+        .header {
+            background-color: #ff0000; /* Coklat Vintage */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .navbar {
+            background-color: #3e2c1c; /* Coklat Gelap */
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .navbar a:hover {
+            color: #f65a00; /* Coklat Muda */
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 20px;
+        }
+        .sidebar {
+            flex: 1 1 20%;
+            background-color: #e8e0db; /* Coklat Muda */
+            padding: 15px;
+            text-align: center;
+            color: #3e2c1c; /* Coklat Gelap */
+            border-radius: 8px;
+        }
+        .main-content {
+            flex: 1 1 60%;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        .main-content marquee {
+            color: #6f4f25; /* Coklat Vintage */
+        }
+        .main-content h2 {
+            color: #333;
+        }
+        .main-content .product {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .main-content .product img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+        .main-content .product .info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 20px;
+        }
+        .main-content .product .info p {
+            margin: 10px 0;
+        }
+        .main-content .product .info a {
+            color: #6f4f25;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .main-content .product .info a:hover {
+            color: #2b2928;
+        }
+        .footer {
+            background-color: #6f4f25; /* Coklat Vintage */
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .sidebar, .main-content {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">SELAMAT DATANG DI GARAGEAQIL.ID</div>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="./tranksaksi/index.html">Transaksi</a>
+        <a href="./tentang/index.html">Tentang Kami</a>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <P> AQIL GARAGE <br> DIJAMIN KUALITAS DAN KEORIANNYA, 
+                <br> SPAREPART MOTOR TERPECAYA </P>
+            </div>
+
+        <div class="main-content">
+            <marquee>Selamat Datang di GARAGEEAQIL.ID!</marquee>
+            <h2>Daftar Produk</h2>
+        
+            <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+                <!-- Knalpot R9 -->
+                <div style="width: 200px; border: 1px solid #ccc; border-radius: 8px; padding: 10px; text-align: center; background-color: #fff;">
+                    <img src="Gambar1.jpg" alt="Sepatu Nyolong" style="width: 100%; border-radius: 8px;">
+                    <h3 style="margin: 10px 0 5px;">Knalpot R9</h3>
+                    <p style="margin: 5px 0;">Rp1.500.000</p>
+                    <a href="./tranksaksi/index.html" style="text-decoration: none; color: #6f4f25; font-weight: bold;">Beli</a>
+                </div>
+        
+                <!-- HeadLamp Billed -->
+                <div style="width: 200px; border: 1px solid #ccc; border-radius: 8px; padding: 10px; text-align: center; background-color: #fff;">
+                    <img src="Gambar2.jpg" alt="Sepatu Bau" style="width: 100%; border-radius: 8px;">
+                    <h3 style="margin: 10px 0 5px;">HeadLamp Billed</h3>
+                    <p style="margin: 5px 0;">Rp1,200.000</p>
+                    <a href="./tranksaksi/index.html" style="text-decoration: none; color: #6f4f25; font-weight: bold;">Beli</a>
+                </div>
+        
+                <!-- Shock DBS -->
+                <div style="width: 200px; border: 1px solid #ccc; border-radius: 8px; padding: 10px; text-align: center; background-color: #fff;">
+                    <img src="Gambar3.jpg" alt="Sepatu Bekas" style="width: 100%; border-radius: 8px;">
+                    <h3 style="margin: 10px 0 5px;">Shock DBS</h3>
+                    <p style="margin: 5px 0;">Rp300.000</p>
+                    <a href="./tranksaksi/index.html" style="text-decoration: none; color: #6f4f25; font-weight: bold;">Beli</a>
+                </div>
+        
+                <!-- Stop Lamp Lazy-->
+                <div style="width: 200px; border: 1px solid #ccc; border-radius: 8px; padding: 10px; text-align: center; background-color: #fff;">
+                    <img src="Gambar4.jpg" alt="Sepatu Rusak" style="width: 100%; border-radius: 8px;">
+                    <h3 style="margin: 10px 0 5px;">StopLamp</h3>
+                    <p style="margin: 5px 0;">Rp400.000</p>
+                    <a href="./tranksaksi/index.html" style="text-decoration: none; color: #6f4f25; font-weight: bold;">Beli</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">Kontak Kami +6282120060137</div>
+    </div>
+
+    <div class="footer">© 2025 GARAGEAQIL.ID - All Rights Reserved</div>
+
+</body>
+</html>

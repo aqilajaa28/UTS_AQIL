@@ -1,0 +1,169 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Formulir Transaksi</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #353434;
+    }
+
+    header {
+      background-color: #ff0000;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 26px;
+      font-weight: bold;
+    }
+   .navbar {
+            background-color: #3e2c1c; /* Coklat Gelap */
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: 30px auto;
+      gap: 30px;
+      padding: 0 20px;
+    }
+
+    .sidebar {
+      flex: 1;
+      background-color: #f0eaea;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .sidebar h3 {
+      color: #800000;
+      margin-bottom: 15px;
+    }
+
+    .sidebar ul {
+      padding-left: 20px;
+    }
+
+    .sidebar li {
+      margin-bottom: 10px;
+    }
+
+    .form-container {
+      flex: 2;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #ff0000;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      background-color: #800000;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a52a2a;
+    }
+
+    footer {
+      background-color: #999;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 14px;
+      color: white;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  FORMULIR TRANSAKSI
+</header>
+
+  <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="index.html">Transaksi</a>
+        <a href="../tentang/index.html">Tentang Kami</a>
+    </div>
+
+<div class="container">
+  <div class="sidebar">
+    <h3>Info Promo & Pengumuman</h3>
+    <ul>
+      <li>🔥 Diskon 20% untuk pembelian minimal 2 item</li>
+      <li>📦 Pengiriman gratis untuk wilayah kota</li>
+      <li>⚠ Toko tutup pada hari Minggu</li>
+      <li>🛠 Layanan servis hanya tersedia by appointment</li>
+    </ul>
+  </div>
+
+  <div class="form-container">
+    <h2>Isi Data Transaksi</h2>
+    <form>
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="alamat">Alamat:</label>
+      <input type="text" id="alamat" name="alamat" required>
+
+      <label for="produk">Apa yang Dibeli:</label>
+      <select id="produk" name="produk" required>
+        <option value="">-- Pilih Produk --</option>
+        <option value="knalpot-r9">Knalpot R9</option>
+        <option value="headlamp-billed">Headlamp Billed</option>
+        <option value="shock-dbs">Shock DBS</option>
+        <option value="stoplamp-lazy">Stoplamp Lazy</option>
+      </select>
+
+      <label for="jumlah">Jumlah:</label>
+      <input type="text" id="jumlah" name="jumlah" required>
+
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 Toko Aqil Garage
+</footer>
+
+</body>
+</html>
